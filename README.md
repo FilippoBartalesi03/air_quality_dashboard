@@ -11,7 +11,7 @@ Mini-app per monitorare la qualità dell'aria dalle stazioni ZeroC.
 
 ```bash
 cd backend
-../source/bin/python app.py
+python3 app.py
 ```
 
 Il backend sarà disponibile su: **http://localhost:5001**
