@@ -68,7 +68,7 @@ async function fetchDetail() {
   loading.value = true
   try {
     payload.value = await $fetch(`${config.public.backendUrl}/api/stations/${id}`)
-    // L'API restituisce metrics come array di oggetti {name, data_points}
+    
     if (payload.value.metrics && Array.isArray(payload.value.metrics) && payload.value.metrics.length > 0) {
       selectedMetric.value = payload.value.metrics[0].name
     } else {
@@ -85,7 +85,7 @@ fetchDetail()
 
 const metrics = computed(() => {
   if (!payload.value || !payload.value.metrics) return []
-  // metrics è un array di oggetti {name, data_points, ...}
+  
   if (Array.isArray(payload.value.metrics)) {
     return payload.value.metrics.map(m => m.name)
   }

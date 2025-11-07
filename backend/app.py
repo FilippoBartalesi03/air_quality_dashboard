@@ -6,7 +6,7 @@ import logging
 import os
 
 app = Flask(__name__)
-CORS(app)  # Abilita CORS per le richieste dal frontend
+CORS(app)  # CORS per le richieste dal frontend
 
 # Configurazione logging
 logging.basicConfig(level=logging.INFO)
@@ -103,6 +103,6 @@ def get_station(station_id):
 
 # ---------- Avvio server ----------
 if __name__ == "__main__":
-    port = int(os.getenv("BACKEND_PORT", 5001))  # Porta 5001 di default
+    port = int(os.getenv("BACKEND_PORT", 5001)) 
     logging.info("Starting Flask backend on port %d", port)
     app.run(debug=True, host="127.0.0.1", port=port)
