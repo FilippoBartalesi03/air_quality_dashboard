@@ -1024,15 +1024,15 @@ const plugins = [
 const assets = {
   "/index.mjs": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"fc5a-a4uxOR0Ncb0cLTvqW8zcYTzDcZg\"",
-    "mtime": "2025-11-06T18:05:32.663Z",
+    "etag": "\"fc5a-1rvv9RwzGQsPqR0UUKTHY5irOks\"",
+    "mtime": "2025-11-10T15:21:02.546Z",
     "size": 64602,
     "path": "index.mjs"
   },
   "/index.mjs.map": {
     "type": "application/json",
     "etag": "\"3b341-OklVLJExkfE1wH7CD6YsILGVDFg\"",
-    "mtime": "2025-11-06T18:05:32.663Z",
+    "mtime": "2025-11-10T15:21:02.550Z",
     "size": 242497,
     "path": "index.mjs.map"
   }
